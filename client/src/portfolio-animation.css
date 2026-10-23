@@ -1,0 +1,23 @@
+@keyframes roleEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-role {
+  animation: roleEnter 0.45s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-role {
+    animation: none;
+  }
+}
